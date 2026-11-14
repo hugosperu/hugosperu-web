@@ -1,4 +1,91 @@
 {
+  "routes": [
+    {
+      "route": "/derechos-constitucionales",
+      "redirect": "/derechos-constitucionales/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-civil",
+      "redirect": "/derecho-civil/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-penal",
+      "redirect": "/derecho-penal/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-laboral",
+      "redirect": "/derecho-laboral/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-pensionario",
+      "redirect": "/derecho-pensionario/",
+      "statusCode": 301
+    },
+    {
+      "route": "/fonavi",
+      "redirect": "/fonavi/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-administrativo",
+      "redirect": "/derecho-administrativo/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-arbitral",
+      "redirect": "/derecho-arbitral/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-ambiental",
+      "redirect": "/derecho-ambiental/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-tributario",
+      "redirect": "/derecho-tributario/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-de-contrataciones-del-estado",
+      "redirect": "/derecho-de-contrataciones-del-estado/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-de-cyberseguridad",
+      "redirect": "/derecho-de-cyberseguridad/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-de-seguridad-y-salud-en-el-trabajo",
+      "redirect": "/derecho-de-seguridad-y-salud-en-el-trabajo/",
+      "statusCode": 301
+    },
+    {
+      "route": "/indemnizaciones",
+      "redirect": "/indemnizaciones/",
+      "statusCode": 301
+    },
+    {
+      "route": "/gestion-publica",
+      "redirect": "/gestion-publica/",
+      "statusCode": 301
+    },
+    {
+      "route": "/costos-y-costas",
+      "redirect": "/costos-y-costas/",
+      "statusCode": 301
+    },
+    {
+      "route": "/derecho-a-la-salud",
+      "redirect": "/derecho-a-la-salud/",
+      "statusCode": 301
+    }
+  ],
   "responseOverrides": {
     "404": {
       "rewrite": "/404.html",
@@ -12,6 +99,7 @@
     "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
   },
   "mimeTypes": {
-    ".svg": "image/svg+xml"
+    ".svg": "image/svg+xml",
+    ".pdf": "application/pdf"
   }
 }

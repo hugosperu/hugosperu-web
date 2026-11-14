@@ -11,11 +11,24 @@ hugosperu-web/
 ├── index.html                  Portada: hero, 17 materias, estudio, contacto
 ├── aviso-de-privacidad.html    Aviso de privacidad (Ley 29733)
 ├── 404.html                    Página de error
-├── staticwebapp.config.json    Cabeceras de seguridad y 404 (solo Azure SWA)
-└── assets/
-    ├── styles.css              Toda la hoja de estilos
-    └── favicon.svg             Icono (§)
+├── staticwebapp.config.json    Cabeceras de seguridad, rutas y 404 (solo Azure SWA)
+├── assets/
+│   ├── styles.css              Toda la hoja de estilos
+│   └── favicon.svg             Icono (§)
+├── <materia>/index.html        17 páginas de materias (una carpeta por materia)
+├── pdfs/                       30 documentos PDF descargables
+└── img/                        32 imágenes de las páginas
 ```
+
+Las 17 carpetas de materias son: `costos-y-costas`, `derecho-a-la-salud`,
+`derecho-administrativo`, `derecho-ambiental`, `derecho-arbitral`, `derecho-civil`,
+`derecho-de-contrataciones-del-estado`, `derecho-de-cyberseguridad`,
+`derecho-de-seguridad-y-salud-en-el-trabajo`, `derecho-laboral`, `derecho-penal`,
+`derecho-pensionario`, `derecho-tributario`, `derechos-constitucionales`, `fonavi`,
+`gestion-publica`, `indemnizaciones`. Se sirven como `https://hugosperu.com/<materia>/`.
+
+`staticwebapp.config.json` incluye una redirección 301 de `/<materia>` a `/<materia>/`
+para que funcione tanto con barra final como sin ella.
 
 ## Datos que ya están puestos
 
@@ -23,7 +36,7 @@ hugosperu-web/
 |---|---|---|
 | WhatsApp | +51 999 760 751 | `index.html`, buscar `wa.me/51999760751` (5 apariciones) |
 | Correo | hugosperu@gmail.com | `index.html` y `aviso-de-privacidad.html` |
-| Materias | 17, enlazadas a `hhugosperu.wpcomstaging.com` | `index.html`, sección `#materias` |
+| Materias | 17, enlazadas a `/<materia>/` (ya no dependen de WordPress) | `index.html`, sección `#materias` |
 | Otros proyectos | ARCONSEG y canales Odysee, plegados | `index.html`, bloque `<details class="otros">` |
 
 **No hay dirección física ni teléfono fijo** porque no se proporcionaron. Si se añaden,
