@@ -519,3 +519,12 @@ a { color: var(--navy-2); }
 .figura { margin: 0 0 2.2rem; max-width: 380px; }
 .figura img { display: block; width: 100%; height: auto; border-radius: var(--radius); }
 @media (max-width: 640px) { .figura { max-width: 320px; } }
+
+/* ---------- Listado de documentos descargables ---------- */
+.docs-tipo { font-family: var(--serif); font-size: 1.05rem; color: var(--navy); margin: 28px 0 6px; }
+.docs { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr; gap: 0; }
+@media (min-width: 800px) { .docs { grid-template-columns: 1fr 1fr; column-gap: 40px; } }
+.docs li { display: flex; flex-direction: column; gap: 3px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.docs a { color: var(--navy); text-decoration: none; font-weight: 600; font-size: .93rem; line-height: 1.35; }
+.docs a:hover { color: var(--gold); text-decoration: underline; }
+.docs-meta { font-size: .74rem; color: var(--muted); letter-spacing: .02em; }
