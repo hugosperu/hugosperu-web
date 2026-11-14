@@ -1,6 +1,26 @@
 {
   "routes": [
     {
+      "route": "/index.html",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/canales",
+      "redirect": "/canales/",
+      "statusCode": 301
+    },
+    {
+      "route": "/hp/*",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
+      "route": "/hp",
+      "redirect": "/",
+      "statusCode": 301
+    },
+    {
       "route": "/derechos-constitucionales",
       "redirect": "/derechos-constitucionales/",
       "statusCode": 301
@@ -84,6 +104,24 @@
       "route": "/derecho-a-la-salud",
       "redirect": "/derecho-a-la-salud/",
       "statusCode": 301
+    },
+    {
+      "route": "/assets/*",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "route": "/img/*",
+      "headers": {
+        "cache-control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
+      "route": "/pdfs/*",
+      "headers": {
+        "cache-control": "public, max-age=2592000"
+      }
     }
   ],
   "responseOverrides": {
@@ -96,7 +134,9 @@
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "SAMEORIGIN",
     "Referrer-Policy": "strict-origin-when-cross-origin",
-    "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
+    "Permissions-Policy": "geolocation=(), microphone=(), camera=()",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "Content-Security-Policy": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; object-src 'none'"
   },
   "mimeTypes": {
     ".svg": "image/svg+xml",
