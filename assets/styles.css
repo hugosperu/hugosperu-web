@@ -562,3 +562,54 @@ a { color: var(--navy-2); }
 .col-more { margin: 14px 0 6px; font-size: .84rem; }
 .col-more a { color: var(--gold); text-decoration: none; }
 .col-more a:hover { text-decoration: underline; }
+
+/* ==========================================================================
+   TEMA OSCURO — portada (hero) y encabezados de las paginas de materias
+   Bloque anadido al final para no modificar ninguna regla existente.
+   ========================================================================== */
+
+.hero {
+  background:
+    radial-gradient(1100px 460px at 82% -15%, rgba(207, 174, 106, .22), transparent 62%),
+    radial-gradient(800px 380px at 8% 110%, rgba(46, 84, 122, .55), transparent 65%),
+    linear-gradient(165deg, #12293f 0%, #0f2137 45%, #0a1727 100%);
+}
+
+.hero::after {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, .055) 1px, transparent 1px);
+}
+
+.hero h1 { color: #ffffff; }
+.hero h1 em { color: #d9bb7d; }
+.hero .eyebrow { color: #d9bb7d; }
+.hero .lead { color: #c9d3de; }
+
+.hero .hero-facts {
+  color: #b9c5d2;
+  border-top-color: rgba(255, 255, 255, .18);
+}
+.hero .hero-facts strong { color: #ffffff; }
+
+.hero .btn-primary { background: #ffffff; color: var(--navy); }
+.hero .btn-primary:hover { background: #e6dfd2; }
+.hero .btn-ghost {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, .42);
+  background: transparent;
+}
+.hero .btn-ghost:hover { border-color: #ffffff; color: #ffffff; }
+
+.page-head {
+  background:
+    radial-gradient(1100px 460px at 82% -15%, rgba(207, 174, 106, .22), transparent 62%),
+    radial-gradient(800px 380px at 8% 110%, rgba(46, 84, 122, .55), transparent 65%),
+    linear-gradient(165deg, #12293f 0%, #0f2137 45%, #0a1727 100%);
+}
+
+.page-head h1 { color: #ffffff; }
+.page-head .lead { color: #c9d3de; }
+
+.crumbs { color: #9fb0c1; }
+.crumbs a { color: #cfdae5; }
+.crumbs a:hover { color: #ffffff; }
+.crumbs span { color: #d9bb7d; }
